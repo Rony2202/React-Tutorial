@@ -1,6 +1,7 @@
 import Reastaurantcard from "./Reastaurantcard";
 import { useState, useEffect } from "react";
 import Shimmer from "./shimmer";
+import { Link } from "react-router-dom";
 
 const Body = () => {
   //Local satate variable - superpowerful variable
@@ -63,7 +64,7 @@ setfilteredReasturant(json?.data?.cards[1]?.card?.card?.gridElements?.infoWithSt
       </div>
       <div className="res-container">
         {filteredReasturant.map((restaurant) => (
-          <Reastaurantcard key={restaurant.info.id} resData={restaurant} />
+         <Link key={restaurant.info.id} to = {"reastaurents/" + restaurant.info.id}> <Reastaurantcard  resData={restaurant} /> </Link>
         ))}
       </div>
     </div>
