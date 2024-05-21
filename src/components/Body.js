@@ -64,7 +64,8 @@ setfilteredReasturant(json?.data?.cards[1]?.card?.card?.gridElements?.infoWithSt
       </div>
       <div className="res-container">
         {filteredReasturant.map((restaurant) => (
-         <Link key={restaurant.info.id} to = {"reastaurents/" + restaurant.info.id}> <Reastaurantcard  resData={restaurant} /> </Link>
+         <Link key={restaurant.info.id}
+          to = {"reastaurents/" + restaurant.info.id}> <Reastaurantcard  resData={restaurant} /> </Link>
         ))}
       </div>
     </div>
