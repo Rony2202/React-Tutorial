@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import Shimmer from "./shimmer";
 import { useParams } from "react-router-dom";
-import { MENU_API } from "../../utilities/constant";
 
 
 const Reastaurantmenu = () => {
